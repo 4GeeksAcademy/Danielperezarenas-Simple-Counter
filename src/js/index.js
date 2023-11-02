@@ -44,10 +44,12 @@ setInterval(function () {
     const three = Math.floor(counter / 100)
     const two = Math.floor(counter / 10)
     const one = Math.floor(counter / 1)
-    console.log(six, five, four, three, two, one)
+
     counter++;
     
     ReactDOM.render(
-        <SimpleCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} digitFive={five} digitSix={six} />, document.querySelector("#app"));
+        <SimpleCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} digitFive={five} digitSix={six} />,
+        document.querySelector("#app")
+    );
 }, 1000);
 
